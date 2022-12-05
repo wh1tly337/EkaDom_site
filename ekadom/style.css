@@ -16,7 +16,7 @@ body {
     width: 100%;
     height: 100vh;
 
-    background: url(main-background.jpg) center no-repeat;
+    background: url(images/main-window/main-background.jpg) center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;}
 
@@ -90,7 +90,7 @@ body {
     vertical-align: top;
     padding: 18px 105px;
 
-    background: url(button-1.png) center no-repeat;
+    background: url(images/main-window/button-1.png) center no-repeat;
     color: #fff;
     font-size: 25px;
     font-weight: 500;
@@ -100,5 +100,5 @@ body {
 }
 
 .btn:hover {
-    background: url(button-1-trans.png) center no-repeat;
+    background: url(images/main-window/button-1-trans.png) center no-repeat;
 }
