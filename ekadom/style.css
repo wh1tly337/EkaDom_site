@@ -18,7 +18,8 @@ body {
 
     background: url(images/main-window/main-background.jpg) center no-repeat;
     -webkit-background-size: cover;
-    background-size: cover;}
+    background-size: cover;
+}
 
 .intro-inner {
     width: 100%;
@@ -55,19 +56,19 @@ body {
     z-index: 1000;
 }
 
-.header-line{
+.header-line {
     display: flex;
 }
 
 .header-logo {
     width: 22.5%;
-    
-    margin: 1px 325px; 
+
+    margin: 1px 325px;
 }
 
-.nav{
+.nav {
     width: 38.75%;
-    
+
     margin: 20px auto;
 }
 
