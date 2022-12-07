@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    /* font-family: Roboto Slab; */
 }
 
 .container {
@@ -83,7 +84,7 @@ body {
 }
 
 .nav-item:hover {
-    color: #F3752C;
+    color: #f57146;
 }
 
 .btn {
@@ -110,13 +111,13 @@ body {
     -webkit-background-size: auto;
     background-size: auto;
 
-    background-position-y: 65px;
+    background-position-y: 0px;
 } */
 
-.container-4-bg:before{
+.container-4-bg:before {
     content: "";
     display: block;
-    width: 1400px;
+    width: 74%;
     height: 2px;
     margin: 5px auto 0;
 
@@ -129,12 +130,39 @@ body {
 }
 
 .servicies-image {
+    float: left;
+    width: 30%;
+    margin: 30px 14px;
+    margin-right: -31%;
+    position: relative;
+    z-index: 1;
+}
+
+.servicies-image-bg {
     width: 30%;
 
-    margin: 30px 50px;
+    margin: 50px 89px;
 
-    position: relative;
+    content: ' ';
+    display: table;
+    clear: both;
 }
+
+/* Animation start */
+.servicies-image-bg.active {
+    height: 1vh;
+    aspect-ratio: 1 / 1;
+    animation: 1s linear 0s alternate back-rect;
+}
+
+@keyframes back-rect {
+    from {
+        transform: translate(-21px, -21px);
+        /* для анимации вовремя нужно подключать js, этим я займусь позже */
+    }
+}
+
+/* Animation finish */
 
 .serv-heading {
     position: absolute;
