@@ -208,12 +208,12 @@ body {
 }
 
 .about-right-logo {
-    margin: 65px 182px 20px;
+    margin: 65px 131px 20px;
 }
 
 .about-right-text {
-    width: 60%;
-    margin: auto 0px 0px 93px;
+    width: 70%;
+    margin: 0px 0px 0px 45px;
 }
 
 .about-text {
@@ -222,14 +222,4 @@ body {
     line-height: 1;
 
     color: black;
-}
-
-.about-green-block:after {
-    content: "";
-    display: block;
-    width: 74%;
-    height: 2px;
-    margin: 200px auto 0;
-
-    background-color: #236532;
 }

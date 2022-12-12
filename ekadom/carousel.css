@@ -7,6 +7,10 @@
         left: 100%;
     }
 
+    97% {
+        left: 100%;
+    }
+
     98% {
         left: 100%;
     }
@@ -21,7 +25,11 @@
         left: 0;
     }
 
-    95% {
+    96% {
+        left: -300%;
+    }
+
+    97% {
         left: -300%;
     }
 
@@ -43,6 +51,10 @@
         scroll-snap-align: none;
     }
 
+    98% {
+        scroll-snap-align: none;
+    }
+
     99% {
         scroll-snap-align: none;
     }
@@ -55,7 +67,6 @@
 * {
     box-sizing: border-box;
     scrollbar-color: transparent transparent;
-    /* thumb and track color */
     scrollbar-width: 0px;
 }
 
@@ -87,9 +98,9 @@
 }
 
 .slide-img {
-    margin: 6px -12px;
-    width: 87%;
-    height: 87%;
+    margin: 4.5px -34.5px;
+    width: 95%;
+    height: 95%;
     object-fit: contain;
 }
 
