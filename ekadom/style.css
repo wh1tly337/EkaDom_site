@@ -190,3 +190,45 @@ body {
 .services-text {
     color: black;
 }
+
+.about-us-block {
+    background: url(images/about-us/orange-back.png) center no-repeat;
+    -webkit-background-size: auto;
+    background-size: auto;
+
+    background-position-y: 50px;
+
+    display: flex;
+    list-style-type: none;
+}
+
+.about-green-block {
+    margin: 10px 0px 0px -6px;
+}
+
+.about-right-logo {
+    margin: 65px 182px 20px;
+}
+
+.about-right-text {
+    width: 60%;
+    margin: auto 0px 0px 93px;
+}
+
+.about-text {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1;
+
+    color: black;
+}
+
+.about-green-block:after {
+    content: "";
+    display: block;
+    width: 74%;
+    height: 2px;
+    margin: 100px auto 0;
+
+    background-color: #236532;
+}
