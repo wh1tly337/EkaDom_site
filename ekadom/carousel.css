@@ -52,13 +52,6 @@
     }
 }
 
-body {
-    max-width: 37.5rem;
-    margin: 0 auto;
-    padding: 0 1.25rem;
-    font-family: 'Lato', sans-serif;
-}
-
 * {
     box-sizing: border-box;
     scrollbar-color: transparent transparent;
@@ -88,6 +81,16 @@ body {
     padding-top: 75%;
     filter: drop-shadow(0 0 10px #0003);
     perspective: 100px;
+
+    margin: 0 auto;
+    padding: 0 300px;
+}
+
+.slide-img {
+    margin: 6px -12px;
+    width: 87%;
+    height: 87%;
+    object-fit: contain;
 }
 
 .carousel__viewport {
@@ -118,16 +121,12 @@ body {
     top: 50%;
     left: 50%;
     transform: translate3d(-50%, -40%, 70px);
-    color: #fff;
-    font-size: 2em;
 }
 
 .carousel__snapper {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    width: 500px;
+    height: 624px;
     scroll-snap-align: center;
 }
 
@@ -135,19 +134,13 @@ body {
     .carousel__snapper {
         animation-name: tonext, snap;
         animation-timing-function: ease;
-        animation-duration: 4s;
+        animation-duration: 5s;
         animation-iteration-count: infinite;
     }
 
     .carousel__slide:last-child .carousel__snapper {
         animation-name: tostart, snap;
     }
-}
-
-.slide-img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -162,15 +155,19 @@ body {
 }
 
 .carousel::before,
-.carousel::after,
+.carousel::after {
+    position: absolute;
+    margin: 306px 94px 0px 37px;
+    width: 13px;
+    height: 43px;
+}
+
 .carousel__prev,
 .carousel__next {
     position: absolute;
-    top: 0;
-    margin: 37.5% 80px;
-    width: 4rem;
-    height: 4rem;
-    transform: translateY(-50%);
+    margin: 290px 86px 0px -20px;
+    width: 39px;
+    height: 43px;
 }
 
 .carousel::before,
@@ -187,17 +184,17 @@ body {
 .carousel::after {
     content: '';
     z-index: 1;
-    background-size: 2rem 2rem;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center center;
     pointer-events: none;
 }
 
 .carousel::before {
-    background: url(images/about-us/left-arrow.png) center no-repeat;
+    background-image: url(images/about-us/left-arrow.png);
 }
 
 
 .carousel::after {
-    background: url(images/about-us/right-arrow.png) center no-repeat;
+    background-image: url(images/about-us/right-arrow.png);
 }
