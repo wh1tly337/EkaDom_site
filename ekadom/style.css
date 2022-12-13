@@ -152,7 +152,7 @@ body {
 .services-image-bg {
     height: 1vh;
     aspect-ratio: 1 / 1;
-    animation: 1s linear 0s alternate back-rect;
+    animation: 1.5s linear 0s alternate back-rect;
 }
 
 @keyframes back-rect {
@@ -224,20 +224,20 @@ body {
     color: black;
 }
 
-.partners-bg{
+.partners-bg {
     background: url(images/partners/frame.png) center no-repeat;
     -webkit-background-size: auto;
     background-size: auto;
 
     background-position-y: 0px;
 }
-.partners-h1{
+
+.partners-h1 {
     color: black;
     font-size: 90px;
     font-weight: 500;
     text-decoration: none;
     text-align: center;
-    /* line-height: 1.3; */
 }
 
 .btn-partners {
@@ -247,6 +247,8 @@ body {
     padding: 32px 170px;
 
     background: url(images/partners/button-grn.png) center no-repeat;
+    -webkit-background-size: auto;
+    background-size: auto;
     color: #fff;
     font-size: 25px;
     font-weight: 500;
@@ -258,4 +260,70 @@ body {
 
 .btn-partners:hover {
     background: url(images/partners/button-org.png) center no-repeat;
+}
+
+.rieltors {
+    background: url(images/rieltors/rieltors-bg-1.png) center no-repeat;
+    -webkit-background-size: auto;
+    background-size: auto;
+
+    background-position-y: 7px;
+    background-position-x: 290px;
+}
+
+.rieltors-block {
+    display: flex;
+    }
+
+.rieltors-text {
+    width: 40%;
+    color: black;
+    font-size: 45px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: left;
+
+    float: left;
+    margin: 68px 0px 0px;
+}
+
+.rieltors-image {
+    float: right;
+    width: 60%;
+    margin: 0px 0px 0px 200px;
+    position: relative;
+    z-index: 1;
+}
+
+.rieltors-image::after {
+    content: "";
+    display: block;
+    width: 1200px;
+    height: 2px;
+    margin: 50px 0px 100px -680px;
+
+    background-color: #236532;
+}
+
+.rieltors-image-bg {
+    float: right;
+
+    margin: 30px 0px 0px -690px;
+
+    content: ' ';
+    display: table;
+    clear: both;
+}
+
+.rieltors-image-bg {
+    height: 1vh;
+    aspect-ratio: 1 / 1;
+    animation: 1.5s linear 0s alternate back-rect-rieltors;
+}
+
+@keyframes back-rect-rieltors {
+    from {
+        transform: translate(-31px, -31px);
+        /* для анимации вовремя нужно подключать js, этим я займусь позже */
+    }
 }
