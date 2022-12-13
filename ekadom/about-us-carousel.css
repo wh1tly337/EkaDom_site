@@ -87,7 +87,7 @@
     -ms-overflow-style: none;
 }
 
-.carousel {
+.about-us-carousel {
     position: relative;
     padding-top: 75%;
     filter: drop-shadow(0 0 10px #0003);
@@ -104,7 +104,7 @@
     object-fit: contain;
 }
 
-.carousel__viewport {
+.about-us-carousel__viewport {
     position: absolute;
     top: 0;
     right: 0;
@@ -119,7 +119,7 @@
     list-style: none;
 }
 
-.carousel__slide {
+.about-us-carousel__slide {
     list-style: none;
     position: relative;
     flex: 0 0 100%;
@@ -127,14 +127,14 @@
     counter-increment: item;
 }
 
-.carousel__slide:before {
+.about-us-carousel__slide:before {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate3d(-50%, -40%, 70px);
 }
 
-.carousel__snapper {
+.about-us-carousel__snapper {
     position: absolute;
     width: 500px;
     height: 624px;
@@ -142,57 +142,57 @@
 }
 
 @media (hover: hover) {
-    .carousel__snapper {
+    .about-us-carousel__snapper {
         animation-name: tonext, snap;
         animation-timing-function: ease;
         animation-duration: 5s;
         animation-iteration-count: infinite;
     }
 
-    .carousel__slide:last-child .carousel__snapper {
+    .about-us-carousel__slide:last-child .about-us-carousel__snapper {
         animation-name: tostart, snap;
     }
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .carousel__snapper {
+    .about-us-carousel__snapper {
         animation-name: none;
     }
 }
 
-.carousel:hover .carousel__snapper,
-.carousel:focus-within .carousel__snapper {
+.about-us-carousel:hover .about-us-carousel__snapper,
+.about-us-carousel:focus-within .about-us-carousel__snapper {
     animation-name: none;
 }
 
-.carousel::before,
-.carousel::after {
+.about-us-carousel::before,
+.about-us-carousel::after {
     position: absolute;
     margin: 306px 94px 0px 37px;
     width: 13px;
     height: 43px;
 }
 
-.carousel__prev,
-.carousel__next {
+.about-us-carousel__prev,
+.about-us-carousel__next {
     position: absolute;
     margin: 290px 86px 0px -20px;
     width: 39px;
     height: 43px;
 }
 
-.carousel::before,
-.carousel__prev {
+.about-us-carousel::before,
+.about-us-carousel__prev {
     left: -1rem;
 }
 
-.carousel::after,
-.carousel__next {
+.about-us-carousel::after,
+.about-us-carousel__next {
     right: -1rem;
 }
 
-.carousel::before,
-.carousel::after {
+.about-us-carousel::before,
+.about-us-carousel::after {
     content: '';
     z-index: 1;
     background-size: 100%;
@@ -201,11 +201,11 @@
     pointer-events: none;
 }
 
-.carousel::before {
+.about-us-carousel::before {
     background-image: url(images/about-us/left-arrow.png);
 }
 
 
-.carousel::after {
+.about-us-carousel::after {
     background-image: url(images/about-us/right-arrow.png);
 }
