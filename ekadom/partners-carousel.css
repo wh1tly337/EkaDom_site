@@ -1,18 +1,10 @@
-@keyframes tonext {
+@keyframes tonext_p {
     75% {
         left: 0;
     }
 
-    95% {
-        left: 100%;
-    }
-
-    97% {
-        left: 100%;
-    }
-
     98% {
-        left: 100%;
+        left: 110%;
     }
 
     99% {
@@ -20,21 +12,13 @@
     }
 }
 
-@keyframes tostart {
+@keyframes tostart_p {
     75% {
         left: 0;
     }
 
-    96% {
-        left: -300%;
-    }
-
-    97% {
-        left: -300%;
-    }
-
     98% {
-        left: -300%;
+        left: -110%;
     }
 
     99% {
@@ -42,17 +26,9 @@
     }
 }
 
-@keyframes snap {
-    96% {
+@keyframes snap_p {
+    98% {
         scroll-snap-align: center;
-    }
-
-    97% {
-        scroll-snap-align: none;
-    }
-
-    98% {
-        scroll-snap-align: none;
     }
 
     99% {
@@ -89,17 +65,16 @@
 
 .partners-carousel {
     position: relative;
-    padding-top: 75%;
     filter: drop-shadow(0 0 10px #0003);
     perspective: 100px;
 
-    margin: 0 auto;
-    padding: 0 300px;
+    margin: 87px 210px 0px;
+    /* to move full block change here */
 }
 
-.slide-img {
-    margin: 4.5px -34.5px;
-    width: 100%;
+.part-img {
+    margin: 0px 0px 0px -70px;
+    width: 120%;
     height: 100%;
     object-fit: contain;
 }
@@ -111,6 +86,8 @@
     bottom: 0;
     left: 0;
     display: flex;
+    width: 800px;
+    height: 150px;
     overflow-x: scroll;
     counter-reset: item;
     scroll-behavior: smooth;
@@ -122,9 +99,13 @@
 .partners-carousel__slide {
     list-style: none;
     position: relative;
+    display: flex;
     flex: 0 0 100%;
     width: 100%;
+    height: 90%;
     counter-increment: item;
+
+    margin: 0px 80px 0px 0px;
 }
 
 .partners-carousel__slide:before {
@@ -136,21 +117,21 @@
 
 .partners-carousel__snapper {
     position: absolute;
-    width: 1000px;
-    height: 1000px;
+    width: 678px; 
+    height: 105px;
     scroll-snap-align: center;
 }
 
 @media (hover: hover) {
     .partners-carousel__snapper {
-        animation-name: tonext, snap;
+        animation-name: tonext_p, snap_p;
         animation-timing-function: ease;
         animation-duration: 5s;
         animation-iteration-count: infinite;
     }
 
     .partners-carousel__slide:last-child .partners-carousel__snapper {
-        animation-name: tostart, snap;
+        animation-name: tostart_p, snap_p;
     }
 }
 
@@ -168,7 +149,7 @@
 .partners-carousel::before,
 .partners-carousel::after {
     position: absolute;
-    margin: 306px 94px 0px 37px;
+    margin: 54.5px 0px 0px 15px;
     width: 13px;
     height: 43px;
 }
@@ -176,9 +157,9 @@
 .partners-carousel__prev,
 .partners-carousel__next {
     position: absolute;
-    margin: 290px 86px 0px -20px;
-    width: 39px;
-    height: 43px;
+    margin: 35px 0px 0px -50px;
+    width: 50px;
+    height: 50px;
 }
 
 .partners-carousel::before,
@@ -202,10 +183,10 @@
 }
 
 .partners-carousel::before {
-    background-image: url(images/about-us/left-arrow.png);
+    background-image: url(images/partners/left-arrow.png);
 }
 
 
 .partners-carousel::after {
-    background-image: url(images/about-us/right-arrow.png);
+    background-image: url(images/partners/right-arrow.png);
 }
