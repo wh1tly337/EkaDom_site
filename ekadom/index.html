@@ -103,7 +103,7 @@
                     </div>
                 </div>
 
-                <script type="text/javascript" src="about-us-slideshow.js"></script>
+                <script src="about-us-slideshow.js"></script>
 
                 <div class="about-right-block">
                     <div class="about-right-logo">
@@ -136,23 +136,22 @@
             <div class="partners-bg">
                 <h1 class="partners-h1">Наши Партнеры</h1>
 
-                <div class="partners-carousel" aria-label="Gallery">
-                    <link rel="stylesheet" href="partners-carousel.css">
-                    <ol class="partners-carousel__viewport">
-                        <li id="partners-carousel__slide1" tabindex="0" class="partners-carousel__slide">
-                            <div class="partners-carousel__snapper"></div>
-                            <img class="part-img" src="images/partners/1-page.png">
-                            <a href="#partners-carousel__slide2" class="partners-carousel__prev"></a>
-                            <a href="#partners-carousel__slide2" class="partners-carousel__next"></a>
-                        </li>
-                        <li id="partners-carousel__slide2" tabindex="0" class="partners-carousel__slide">
-                            <div class="partners-carousel__snapper"></div>
-                            <img class="part-img" src="images/partners/2-page.png">
-                            <a href="#partners-carousel__slide1" class="partners-carousel__prev"></a>
-                            <a href="#partners-carousel__slide1" class="partners-carousel__next"></a>
-                        </li>
-                    </ol>
+                <div class="partners-slideshow">
+                    <link rel="stylesheet" href="partners-slideshow.css">
+                    <ul id="partners-slides">
+                        <li class="partners-slide partners-showing"></li>
+                        <li class="partners-slide"></li>
+                    </ul>
+                    <div class="partners-buttons">
+                        <button class="partners-controls" id="partners-previous">&lt;</button>
+                
+                        <button class="partners-controls" id="partners-pause">&#10074;&#10074;</button>
+                
+                        <button class="partners-controls" id="partners-next">&gt;</button>
+                    </div>
                 </div>
+                
+                <script src="partners-slideshow.js"></script>
 
                 <a class="btn-partners" href="@">Получить бесплатную<br />консультацию</a>
             </div>

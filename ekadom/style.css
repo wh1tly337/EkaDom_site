@@ -8,7 +8,7 @@ body {
     max-width: 1200px;
     margin: 0px auto;
 
-    /* background-color: yellow; */
+    background-color: yellow;
 }
 
 .intro {
@@ -243,10 +243,10 @@ body {
 
 .btn-partners {
     width: 580px;
-    margin: 352px 0px 86px 310px;
+    margin: 86px 0px 86px 310px;
     display: inline-block;
     vertical-align: top;
-    padding: 32px 150px;
+    padding: 32px 0px;
 
     color: #fff;
     font-size: 25px;
