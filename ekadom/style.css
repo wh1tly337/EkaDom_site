@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    /* font-family: Roboto Slab; */
+    font-family: 'Trebuchet MS', sans-serif;
 }
 
 .container {
@@ -8,7 +8,7 @@ body {
     max-width: 1200px;
     margin: 0px auto;
 
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
 .intro {
@@ -169,11 +169,11 @@ body {
     position: absolute;
     color: #fff;
 
-    font-size: 54px;
+    font-size: 55px;
     font-weight: 500;
     text-align: center;
 
-    left: 85px;
+    left: 67px;
     top: 93px;
 }
 
@@ -214,11 +214,11 @@ body {
 
 .about-right-text {
     width: 70%;
-    margin: 0px 0px 0px 45px;
+    margin: 0px 0px 0px 35px;
 }
 
 .about-text {
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 500;
     line-height: 1;
 
@@ -242,19 +242,21 @@ body {
 }
 
 .btn-partners {
-    margin: 352px 312px 86px;
+    width: 73%;
+    margin: 352px 0px 86px 162px;
     display: inline-block;
     vertical-align: top;
-    padding: 32px 170px;
+    padding: 32px 150px;
 
-    background: url(images/partners/button-grn.png) center no-repeat;
-    -webkit-background-size: auto;
-    background-size: auto;
     color: #fff;
     font-size: 25px;
     font-weight: 500;
     text-decoration: none;
-    text-align: center;
+    text-align: center;  
+
+    background: url(images/partners/button-grn.png) center no-repeat;
+    -webkit-background-size: auto;
+    background-size: auto;
 
     transition: background 0.1s linear;
 }
@@ -277,13 +279,13 @@ body {
 .rieltors-text {
     width: 400px;
     color: black;
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 500;
     text-decoration: none;
     text-align: left;
 
     float: left;
-    margin: 68px 0px 0px 60px;
+    margin: 49px 0px 0px 60px;
 }
 
 .rieltors-image {
@@ -350,7 +352,7 @@ body {
     text-decoration: none;
     line-height: 2.5;
     text-align: right;
-    margin: 0px 0px 0px 595px;
+    margin: 0px 0px 0px 550px;
 }
 
 .code {
