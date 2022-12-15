@@ -21,35 +21,12 @@ function partners_goToSlide(n) {
   partners_slides[partners_currentSlide].className = 'partners-slide partners-showing';
 }
 
-
-var partners_playing = true;
-var partners_pauseButton = document.getElementById('partners-pause');
-
-function partners_pauseSlideshow() {
-  partners_pauseButton.innerHTML = '&#9658;'; // play character
-  partners_playing = false;
-  clearInterval(partners_slideInterval);
-}
-
-function partners_playSlideshow() {
-  partners_pauseButton.innerHTML = '&#10074;&#10074;'; // pause character
-  partners_playing = true;
-  partners_slideInterval = setInterval(partners_nextSlide, 2000);
-}
-
-partners_pauseButton.onclick = function () {
-  if (partners_playing) { partners_pauseSlideshow(); }
-  else { partners_playSlideshow(); }
-};
-
 var partners_next = document.getElementById('partners-next');
 var partners_previous = document.getElementById('partners-previous');
 
 partners_next.onclick = function () {
-  partners_pauseSlideshow();
   partners_nextSlide();
 };
 partners_previous.onclick = function () {
-  partners_pauseSlideshow();
   partners_previousSlide();
 };
