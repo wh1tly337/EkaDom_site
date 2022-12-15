@@ -209,12 +209,12 @@ body {
 }
 
 .about-right-logo {
-    margin: 65px 0px 0px -3px;
+    margin: 65px 0px 0px 144px;
 }
 
 .about-right-text {
-    width: 90%;
-    margin: 0px 0px 0px -100px;
+    width: 70%;
+    margin: 15px 0px 0px 47px;
 }
 
 .about-text {
@@ -252,7 +252,7 @@ body {
     font-size: 25px;
     font-weight: 500;
     text-decoration: none;
-    text-align: center;  
+    text-align: center;
 
     background: url(images/partners/button-grn.png) center no-repeat;
     -webkit-background-size: auto;

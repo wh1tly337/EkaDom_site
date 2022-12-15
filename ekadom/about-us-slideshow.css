@@ -2,7 +2,7 @@
 essential styles:
 these make the slideshow work
 */
-#slides{
+#slides {
     position: relative;
     width: 30%;
     height: 620px;
@@ -10,35 +10,35 @@ these make the slideshow work
     padding: 0px;
     margin: 0px;
     list-style-type: none;
-  }
-  
-  .slide{
+}
+
+.slide {
     position: absolute;
-    margin: 20px 0px 0px 51px;
+    margin: 18px 0px 0px 51px;
     left: 0px;
     top: 0px;
     width: 100%;
     height: 100%;
     opacity: 0;
     z-index: 1;
-  
+
     -webkit-transition: opacity 1s;
     -moz-transition: opacity 1s;
     -o-transition: opacity 1s;
     transition: opacity 1s;
-  }
-  
-  .showing{
+}
+
+.showing {
     opacity: 1;
     z-index: 2;
-  }
-  
-  
-  .controls{
-    display: none;
-  }
+}
 
-  /* Separator */
+
+.controls {
+    display: none;
+}
+
+/* Separator */
 
 .slide {
     background-size: contain;
@@ -65,25 +65,26 @@ these make the slideshow work
 }
 
 .controls {
-    background: #333;
-    color: #fff;
+    background: none;
     border: none;
-    padding: 20px 0px;
-    font-size: 20px;
+    color: black;
+    font-size: 15px;
     cursor: pointer;
-    border: 2px solid #fff;
-    margin: 10px 0px 0px 10px;
-    width: 70px;
+    /* border: 2px solid #fff; */
+    margin: 637.5px 0px 0px 98px;
+    width: 50px;
+    height: 50px;
 }
 
-.controls:hover,
-.controls:focus {
-    background: #eee;
-    color: #333;
+.controls:hover {
+    color: #236532;
 }
 
-.container {
+.about-us-slideshow {
     position: relative;
+    width: 870px;
+    height: 688px;
+    /* background-color: yellow; */
 }
 
 .buttons {
