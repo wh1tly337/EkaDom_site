@@ -1,9 +1,9 @@
-var controls = document.querySelectorAll('.controls');
+var controls = document.querySelectorAll('.about-us-controls');
 for (var i = 0; i < controls.length; i++) {
   controls[i].style.display = 'inline-block';
 }
 
-var slides = document.querySelectorAll('#slides .slide');
+var slides = document.querySelectorAll('#about-us-slides .about-us-slide');
 var currentSlide = 0;
 var slideInterval = setInterval(nextSlide, 5000);
 
@@ -16,14 +16,14 @@ function previousSlide() {
 }
 
 function goToSlide(n) {
-  slides[currentSlide].className = 'slide';
+  slides[currentSlide].className = 'about-us-slide';
   currentSlide = (n + slides.length) % slides.length;
-  slides[currentSlide].className = 'slide showing';
+  slides[currentSlide].className = 'about-us-slide about-us-showing';
 }
 
 
 var playing = true;
-var pauseButton = document.getElementById('pause');
+var pauseButton = document.getElementById('about-us-pause');
 
 function pauseSlideshow() {
   pauseButton.innerHTML = '&#9658;'; // play character
@@ -42,8 +42,8 @@ pauseButton.onclick = function () {
   else { playSlideshow(); }
 };
 
-var next = document.getElementById('next');
-var previous = document.getElementById('previous');
+var next = document.getElementById('about-us-next');
+var previous = document.getElementById('about-us-previous');
 
 next.onclick = function () {
   pauseSlideshow();
