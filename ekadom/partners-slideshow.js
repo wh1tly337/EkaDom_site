@@ -5,7 +5,7 @@ for (var i = 0; i < partners_controls.length; i++) {
 
 var partners_slides = document.querySelectorAll('#partners-slides .partners-slide');
 var partners_currentSlide = 0;
-var partners_slideInterval = setInterval(partners_nextSlide, 5000);
+var partners_slideInterval = setInterval(partners_nextSlide, 10000);
 
 function partners_nextSlide() {
   partners_goToSlide(partners_currentSlide + 1);
