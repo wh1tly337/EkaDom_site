@@ -13,10 +13,10 @@
     <section class='header'>
         <div class='container'>
             <div class='header-line'>
-                <div class="nav"><a class="nav-item" href="@">O нас</a></div>
+                <div class="nav"><a class="nav-item" href="#" data-scroll="#about">O нас</a></div>
                 <div class='header-logo'><img src="images/header/header-logo.png" alt=""></div>
                 <!-- Поставить лого в центр экрана вместо текста, текст убрать -->
-                <div class="nav"><a class="nav-item" href="@">Контакты</a></div>
+                <div class="nav"><a class="nav-item" href="#" data-scroll="#contacts">Контакты</a></div>
             </div>
         </div>
     </section>
@@ -78,7 +78,7 @@
         </div>
     </section>
 
-    <section class="about-us">
+    <section class="about-us" id="about">
         <div class="container">
             <div class="about-us-block">
                 <div class="about-green-block">
@@ -156,7 +156,7 @@
         </div>
     </section>
 
-    <section class="rieltors">
+    <section class="rieltors" id="contacts">
         <div class="container">
             <div class="rieltors-block">
                 <div class="rieltors-text">
@@ -194,6 +194,10 @@
             </div>
         </div>
     </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+
 </body>
 
 </html>
