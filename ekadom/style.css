@@ -147,23 +147,17 @@ body {
     content: ' ';
     display: table;
     clear: both;
-}
 
-/* Animation start */
-.services-image-bg {
     height: 1vh;
     aspect-ratio: 1 / 1;
-    animation: 1.5s linear 0s alternate back-rect;
-}
 
-@keyframes back-rect {
-    from {
-        transform: translate(-21px, -21px);
-        /* для анимации вовремя нужно подключать js, этим я займусь позже */
-    }
-}
+    transform: translate(-21px, -21px);
+    transition: linear 1s ease-in-out, transform 1s ease-in-out}
 
-/* Animation finish */
+.services-image-bg.animation-class {
+    transform: translate(0px, 0px);
+    transition: linear 1s ease-in-out, transform 1s ease-in-out;
+}
 
 .services-heading {
     position: absolute;
@@ -314,19 +308,16 @@ body {
     content: ' ';
     display: table;
     clear: both;
-}
 
-.rieltors-image-bg {
     height: 1vh;
     aspect-ratio: 1 / 1;
-    animation: 1.5s linear 0s alternate back-rect-rieltors;
-}
 
-@keyframes back-rect-rieltors {
-    from {
-        transform: translate(-31px, -31px);
-        /* для анимации вовремя нужно подключать js, этим я займусь позже */
-    }
+    transform: translate(-31px, -31px);
+    transition: linear 1s ease-in-out, transform 1s ease-in-out}
+
+.rieltors-image-bg.animation-class {
+    transform: translate(0px, 0px);
+    transition: linear 1s ease-in-out, transform 1s ease-in-out;
 }
 
 .bottom-page {
