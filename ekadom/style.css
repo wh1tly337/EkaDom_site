@@ -87,7 +87,7 @@ body {
     color: #f57146;
 }
 
-.btn-intro {
+#intro {
     margin: 150px auto 0;
     display: inline-block;
     vertical-align: top;
@@ -102,7 +102,7 @@ body {
     transition: background 0.1s linear;
 }
 
-.btn-intro:hover {
+#intro:hover {
     background: url(images/main-window/button-1-trans.png) center no-repeat;
 }
 
@@ -152,7 +152,8 @@ body {
     aspect-ratio: 1 / 1;
 
     transform: translate(-21px, -21px);
-    transition: linear 1s ease-in-out, transform 1s ease-in-out}
+    transition: linear 1s ease-in-out, transform 1s ease-in-out
+}
 
 .services-image-bg.animation-class {
     transform: translate(0px, 0px);
@@ -235,7 +236,7 @@ body {
     text-align: center;
 }
 
-.btn-partners {
+#partners {
     width: 580px;
     margin: 86px 0px 86px 310px;
     display: inline-block;
@@ -255,7 +256,7 @@ body {
     transition: background 0.1s linear;
 }
 
-.btn-partners:hover {
+#partners:hover {
     background: url(images/partners/button-org.png) center no-repeat;
 }
 
@@ -313,7 +314,8 @@ body {
     aspect-ratio: 1 / 1;
 
     transform: translate(-31px, -31px);
-    transition: linear 1s ease-in-out, transform 1s ease-in-out}
+    transition: linear 1s ease-in-out, transform 1s ease-in-out
+}
 
 .rieltors-image-bg.animation-class {
     transform: translate(0px, 0px);
@@ -361,4 +363,41 @@ body {
     text-decoration: none;
     text-align: right;
     line-height: 1.5;
+}
+
+.modal-overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal {
+	background-color: #fff;
+	width: 300px;
+	height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	display: none;
+}
+
+.modal-overlay--visible {
+	opacity: 1;
+	visibility: visible;
+	transition: all 0.3s ease-in-out;
+}
+
+.modal--visible {
+	display: block;
 }
