@@ -6,7 +6,7 @@ body {
 .container {
     width: 100%;
     max-width: 1200px;
-    margin: 0px auto;
+    margin: 0 auto;
 
     /* background-color: yellow; */
 }
@@ -133,8 +133,7 @@ body {
 .services-image {
     float: left;
     width: 30%;
-    margin: 30px 14px;
-    margin-right: -31%;
+    margin: 30px -31% 30px 14px;
     position: relative;
     z-index: 1;
 }
@@ -200,16 +199,16 @@ body {
 
 .about-green-block {
     position: absolute;
-    margin: 10px 0px 0px -6px;
+    margin: 10px 0 0 -6px;
 }
 
 .about-right-logo {
-    margin: 65px 0px 0px 144px;
+    margin: 65px 0 0 144px;
 }
 
 .about-right-text {
     width: 70%;
-    margin: 15px 0px 0px 47px;
+    margin: 15px 0 0 47px;
 }
 
 .about-text {
@@ -225,7 +224,7 @@ body {
     -webkit-background-size: auto;
     background-size: auto;
 
-    background-position-y: 0px;
+    background-position-y: 0;
 }
 
 .partners-h1 {
@@ -238,10 +237,10 @@ body {
 
 #partners {
     width: 580px;
-    margin: 86px 0px 86px 310px;
+    margin: 86px 0 86px 310px;
     display: inline-block;
     vertical-align: top;
-    padding: 32px 0px;
+    padding: 32px 0;
 
     color: #fff;
     font-size: 25px;
@@ -268,7 +267,7 @@ body {
     background-size: auto;
 
     background-position-y: 7px;
-    background-position-x: 0px;
+    background-position-x: 0;
 }
 
 .rieltors-text {
@@ -280,13 +279,13 @@ body {
     text-align: left;
 
     float: left;
-    margin: 49px 0px 0px 60px;
+    margin: 49px 0 0 60px;
 }
 
 .rieltors-image {
     float: right;
     width: 60%;
-    margin: 0px 0px 0px 200px;
+    margin: 0 0 0 200px;
     position: relative;
     z-index: 1;
 }
@@ -296,7 +295,7 @@ body {
     display: block;
     width: 1200px;
     height: 2px;
-    margin: 50px 0px 5px -660px;
+    margin: 50px 0 5px -660px;
 
     background-color: #236532;
 }
@@ -304,7 +303,7 @@ body {
 .rieltors-image-bg {
     float: right;
 
-    margin: 30px 0px 0px -690px;
+    margin: 30px 0 0 -690px;
 
     content: ' ';
     display: table;
@@ -345,7 +344,7 @@ body {
     text-decoration: none;
     line-height: 2.5;
     text-align: right;
-    margin: 0px 0px 0px 550px;
+    margin: 0 0 0 550px;
 }
 
 .code {
@@ -389,7 +388,6 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	display: none;
 }
 
 .modal-overlay--visible {
