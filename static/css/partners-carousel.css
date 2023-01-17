@@ -43,7 +43,6 @@
 * {
     box-sizing: border-box;
     scrollbar-color: transparent transparent;
-    scrollbar-width: 0px;
 }
 
 *::-webkit-scrollbar {
@@ -68,12 +67,12 @@
     filter: drop-shadow(0 0 10px #0003);
     perspective: 100px;
 
-    margin: 87px 210px 0px;
+    margin: 87px 210px 0;
     /* to move full block change here */
 }
 
 .part-img {
-    margin: 0px 0px 0px -70px;
+    margin: 0 0 0 -70px;
     width: 120%;
     height: 100%;
     object-fit: contain;
@@ -105,7 +104,7 @@
     height: 90%;
     counter-increment: item;
 
-    margin: 0px 80px 0px 0px;
+    margin: 0 80px 0 0;
 }
 
 .partners-carousel__slide:before {
@@ -149,7 +148,7 @@
 .partners-carousel::before,
 .partners-carousel::after {
     position: absolute;
-    margin: 54.5px 0px 0px 15px;
+    margin: 55px 0 0 15px;
     width: 13px;
     height: 43px;
 }
@@ -157,7 +156,7 @@
 .partners-carousel__prev,
 .partners-carousel__next {
     position: absolute;
-    margin: 35px 0px 0px -50px;
+    margin: 35px 0 0 -50px;
     width: 50px;
     height: 50px;
 }
@@ -180,13 +179,4 @@
     background-repeat: no-repeat;
     background-position: center center;
     pointer-events: none;
-}
-
-.partners-carousel::before {
-    background-image: url(images/partners/left-arrow.png);
-}
-
-
-.partners-carousel::after {
-    background-image: url(images/partners/right-arrow.png);
 }

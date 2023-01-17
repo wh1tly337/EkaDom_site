@@ -155,7 +155,7 @@ body {
 }
 
 .services-image-bg.animation-class {
-    transform: translate(0px, 0px);
+    transform: translate(0, 0);
     transition: linear 1s ease-in-out, transform 1s ease-in-out;
 }
 
@@ -317,7 +317,7 @@ body {
 }
 
 .rieltors-image-bg.animation-class {
-    transform: translate(0px, 0px);
+    transform: translate(0, 0);
     transition: linear 1s ease-in-out, transform 1s ease-in-out;
 }
 
