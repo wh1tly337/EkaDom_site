@@ -32,21 +32,22 @@
             <div id="my_modal" class="modal">
                 <div class="modal_content">
                     <span class="close_modal_window">×</span>
-                    <form class="tgForm" method="POST" action="telegram_bot.php">
-                        <div class="form-group"></div>
+                    <form class="form"> <!--method="POST" action="telegram_bot.php"-->
+                        <div class="form-logo"><img src="../../static/images/header/header-logo.png" alt=""></div>
+                        <div class="form-text">Вы можете оставить заявку на сайте и мы вам обязательно перезвоним</div>
                         <div class="form-group">
-                            <label for="FormControlInput1">Phone number</label>
-                            <input type="text" class="form-control" id="FormControlInput1" placeholder="+7999999999">
+                            <label class="left-text" for="FormControlInput1">Номер телефона</label>
+                            <input type="text" class="form-control" id="FormControlInput1" placeholder="+7(999)-999-99-99">
                         </div>
                         <div class="form-group">
-                            <label for="FormControlInput2">Name</label>
+                            <label class="left-text" for="FormControlInput2">Имя</label>
                             <input type="text" class="form-control" id="FormControlInput2" placeholder="Иван">
                         </div>
                         <div class="form-group">
-                            <label for="FormControlInput3">Address of object</label>
+                            <label class="left-text" for="FormControlInput3">Адрес объекта по которому <br/>Вы хотите обратиться</label>
                             <input type="text" class="form-control" id="FormControlInput3" placeholder="ул. Пушкина 18">
                         </div>
-                        <button type="submit" class="btn btn-primary">Send info</button>
+                        <button type="submit" class="btn btn-primary">Отправить заявку</button>
                     </form>
                 </div>
             </div>
