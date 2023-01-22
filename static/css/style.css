@@ -399,7 +399,7 @@ body {
     border-radius: 20px;
     box-sizing: border-box;
     /*height: 500px;*/
-    margin: 19% auto;
+    margin: 13% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 25%;
@@ -407,7 +407,7 @@ body {
 }
 
 .modal .modal_content .close_modal_window {
-    color: black;
+    color: #236532;
     float: right;
     font-size: 30px;
     font-weight: bold;

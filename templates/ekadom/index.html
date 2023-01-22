@@ -36,19 +36,20 @@
                         <div class="form-logo"><img src="../../static/images/header/header-logo.png" alt=""></div>
                         <div class="form-text">Вы можете оставить заявку на сайте и мы вам обязательно перезвоним</div>
                         <div class="form-group">
-                            <label class="left-text" for="FormControlInput1">Номер телефона</label>
-                            <input type="text" class="form-control" id="FormControlInput1" placeholder="+7(999)-999-99-99">
+                            <label class="left-text" id="ltp" for="FormControlInput1">Номер телефона</label>
+                            <input name="phone" type="text" class="form-control" id="FormControlInput1" placeholder="+7(999)-999-99-99">
                         </div>
                         <div class="form-group">
-                            <label class="left-text" for="FormControlInput2">Имя</label>
-                            <input type="text" class="form-control" id="FormControlInput2" placeholder="Иван">
+                            <label class="left-text" id="ltn" for="FormControlInput2">Имя</label>
+                            <input name="name" type="text" class="form-control" id="FormControlInput2" placeholder="Иван">
                         </div>
                         <div class="form-group">
                             <label class="left-text" for="FormControlInput3">Адрес объекта по которому <br/>Вы хотите обратиться</label>
-                            <input type="text" class="form-control" id="FormControlInput3" placeholder="ул. Пушкина 18">
+                            <input name="address" type="text" class="form-control" id="FormControlInput3" placeholder="ул. Пушкина 18">
                         </div>
                         <button type="submit" class="btn btn-primary">Отправить заявку</button>
                     </form>
+                     <script src="../../static/js/form-validate.js"></script>
                 </div>
             </div>
         </div>
