@@ -9,11 +9,13 @@ function onInputPhone() {
         text_phone.textContent = "Номер телефона введен верно"
         text_phone.style.color = "green"
         phoneRight = true
+        document.getElementById('smbt-btn').disabled = false;
     } else {
         input_phone.style.borderColor = 'red';
         text_phone.textContent = "Номер телефона введен неверно"
         text_phone.style.color = "red"
         phoneRight = false
+        document.getElementById('smbt-btn').disabled = true;
     }
 }
 

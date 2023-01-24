@@ -37,23 +37,24 @@
                         <div class="form-text">Вы можете оставить заявку на сайте и мы вам обязательно перезвоним</div>
                         <div class="form-group">
                             <label class="left-text" id="ltp" for="FormControlInput1">Номер телефона</label>
-                            <input name="phone" type="text" class="form-control" id="FormControlInput1" placeholder="+7(999)-999-99-99">
+                            <input name="phone" type="text" class="form-control" id="FormControlInput1" oninvalid="this.setCustomValidity('Пожалуйста введите Ваш номер телефона')"
+                                   oninput="setCustomValidity('')" required placeholder="+7(999)-999-99-99">
                         </div>
                         <div class="form-group">
                             <label class="left-text" id="ltn" for="FormControlInput2">Имя</label>
-                            <input name="name" type="text" class="form-control" id="FormControlInput2" placeholder="Иван">
+                            <input name="name" type="text" class="form-control" id="FormControlInput2" oninvalid="this.setCustomValidity('Пожалуйста введите Ваше имя')" oninput="setCustomValidity('')"
+                                   required placeholder="Иван">
                         </div>
                         <div class="form-group">
-                            <label class="left-text" for="FormControlInput3">Адрес объекта по которому <br/>Вы хотите обратиться</label>
-                            <input name="address" type="text" class="form-control" id="FormControlInput3" placeholder="ул. Пушкина 18">
+                            <label class="left-text" for="FormControlInput3">Вопрос по которому <br/>Вы хотите обратиться</label>
+                            <input name="address" type="text" class="form-control" id="FormControlInput3" oninvalid="this.setCustomValidity('Пожалуйста введите Ваш вопрос')"
+                                   oninput="setCustomValidity('')" required placeholder="Покупка квартиры">
                         </div>
-                        <button type="submit" class="btn btn-primary">Отправить заявку</button>
+                        <button type="submit" id="smbt-btn" class="btn btn-primary">Отправить заявку</button>
                     </form>
                 </div>
             </div>
         </div>
-
-
     </div>
 </section>
 
